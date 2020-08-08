@@ -1,5 +1,4 @@
-mastercard code challenge: Origin to Destination travel determines if two cities are connected
-
+# mastercard code challenge: Origin to Destination travel determines if two cities are connected
 
 OriginDestination Travel determines whether two given cities are connected as per below exapmple :
 
@@ -7,10 +6,11 @@ Origin   Destination
 Boston   New York
 Newark   Boston
 
-Tools used:
+# Tools used:
 
 Spring Tool Suite 4 Version: 4.7.1 & GitHub
 
+# Execution Steps
 
 Send HTTP GET requests to localhost port 8080, naming origin and destination cities, thus:
 
@@ -20,6 +20,6 @@ If Boston is connected to Newyork by any path along known roads, the response wi
 
 If not, or if the request is not formatted properly, the response will be: no
 
-
+# Conclusion
 
 
