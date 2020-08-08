@@ -1,4 +1,6 @@
-# mastercard code challenge: Origin to Destination travel determines if two cities are connected
+# Mastercard code challenge: Origin to Destination travel determines if two cities are connected
+
+# Project Description
 
 OriginDestination Travel determines whether two given cities are connected as per below exapmple :
 
@@ -6,7 +8,7 @@ Origin   Destination
 Boston   New York
 Newark   Boston
 
-# Tools used:
+# Technology Used(Windows & Linux)
 
 Spring Tool Suite 4 Version: 4.7.1 & GitHub
 
