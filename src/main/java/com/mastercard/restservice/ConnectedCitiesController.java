@@ -1,3 +1,8 @@
+/* Spring boot Controller class with get url for requirement
+ * 
+ * 
+ */
+
 package com.mastercard.restservice;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,7 +17,12 @@ public class ConnectedCitiesController {
 		
 		return isConnected(origin, destination);
 	}
-	
+	/**
+	 * 
+	 * @param origin
+	 * @param destination
+	 * @return
+	 */
 	private String isConnected(String origin,String destination)
 	{
 		if (origin==null || destination==null)
@@ -22,7 +32,7 @@ public class ConnectedCitiesController {
 		if(returnVal==null)
 			return "no";
 		
-		returnVal = Cities.getOrigDest().get(origin + "-" + destination).equals("YES")? "yes":"no";
+		returnVal = returnVal.equals("YES")? "yes":"no";
 		
 		return returnVal;
 	}

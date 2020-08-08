@@ -1,3 +1,9 @@
+/*
+ *We have initialized HasMap with combination of origin and destination cities
+ * 
+ * 
+ * 
+ */
 package com.mastercard;
 
 import java.io.IOException;
