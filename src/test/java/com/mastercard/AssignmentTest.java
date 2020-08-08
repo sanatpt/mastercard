@@ -24,29 +24,51 @@ public class AssignmentTest
 	 * 
 	 * @throws Exception
 	 */
+	
+	/**
+	 * Test case for Origin to Destination
+	 * @throws Exception
+	 */
 	@Test
 	public void checkConnected() throws Exception {
 		this.mockMvc.perform(get("/connected?origin=Boston&destination=Newark")).andDo(print()).andExpect(status().isOk())
 				.andExpect(content().string(containsString("yes")));
 	}
 	
+	/**
+	 * Test case for Destination to Origin
+	 * @throws Exception
+	 */
 	@Test
 	public void checkReverseConnected() throws Exception {
 		this.mockMvc.perform(get("/connected?origin=Newark&destination=Boston")).andDo(print()).andExpect(status().isOk())
 				.andExpect(content().string(containsString("yes")));
 	}
 	
+	/**
+	 * Test case for Origin to Destination
+	 * @throws Exception
+	 */
 	@Test
 	public void checkNotConnected() throws Exception {
 		this.mockMvc.perform(get("/connected?origin=Boston&destination=Albany")).andDo(print()).andExpect(status().isOk())
 				.andExpect(content().string(containsString("no")));
 	}
 	
+	/**
+	 * Test case for Origin value is null
+	 * @throws Exception
+	 */
 	@Test
 	public void checkNullOrigin() throws Exception {
 		this.mockMvc.perform(get("/connected?origin=&destination=Albany")).andDo(print()).andExpect(status().isOk())
 				.andExpect(content().string(containsString("no")));
 	}
+	
+	/**
+	 * Test case for Destination value is null
+	 * @throws Exception
+	 */
 	
 	@Test
 	public void checkNullDestination() throws Exception {
